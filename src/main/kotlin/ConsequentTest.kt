@@ -135,7 +135,7 @@ private fun testThreadsOrder(
             is RetInt -> {
                 assertTrue(!resSet.contains(invoke.res), "${invoke.res} already was answered", state, res)
                 res[curThread]!!.lastOrNull()?.also { last ->
-                    assertTrue(last.lowerThan(invoke.res), "One thread received lower value after bigger $last ${invoke.res}", state, res)
+                    assertTrue(last.lowerThan(invoke.res), "Thread received lower value after bigger $last ${invoke.res}", state, res)
                 }
 
                 res[curThread]!! += invoke.res

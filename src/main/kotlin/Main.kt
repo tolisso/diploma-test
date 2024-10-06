@@ -2,7 +2,7 @@ package io.github.tolisso
 
 object ConsequentTestGlobals {
     const val THREADS_NUM = 3
-    const val REPEATS = 5000
+    const val REPEATS = 20000
     const val DEPTH = 5000
 }
 
